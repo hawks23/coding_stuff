@@ -1,0 +1,52 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch SwingExample",
+      "request": "launch",
+      "mainClass": "SwingExample",
+      "projectName": "Coding_stuff_380a29f8"
+    },
+    {
+      "type": "java",
+      "name": "Launch swingProg",
+      "request": "launch",
+      "mainClass": "swingProg",
+      "projectName": "Coding_stuff_380a29f8"
+    },
+    {
+      "type": "java",
+      "name": "Launch myThread",
+      "request": "launch",
+      "mainClass": "myThread",
+      "projectName": "Coding_stuff_380a29f8"
+    },
+    {
+      "type": "java",
+      "name": "Launch MyInput",
+      "request": "launch",
+      "mainClass": "MyInput",
+      "projectName": "Coding_stuff_380a29f8"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "d:/Coding_stuff/C stuff",
+      "program": "d:/Coding_stuff/C stuff/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
