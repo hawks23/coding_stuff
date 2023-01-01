@@ -59,16 +59,20 @@ class SwingExample
     JButton minusButton = new JButton("-");
 
     // Add action listeners for the buttons
-    plusButton.addActionListener(new ActionListener() {
-      public void actionPerformed(ActionEvent e) {
+    plusButton.addActionListener(new ActionListener() 
+    {
+      public void actionPerformed(ActionEvent e) 
+      {
         // Parse the text in T1 and T2 as integers and add them
         int result = Integer.parseInt(T1.getText()) + Integer.parseInt(T2.getText());
         // Set the text of T3 to the result
         T3.setText(Integer.toString(result));
       }
     });
-    minusButton.addActionListener(new ActionListener() {
-      public void actionPerformed(ActionEvent e) {
+    minusButton.addActionListener(new ActionListener() 
+    {
+      public void actionPerformed(ActionEvent e)
+      {
         // Parse the text in T1 and T2 as integers and subtract them
         int result = Integer.parseInt(T1.getText()) - Integer.parseInt(T2.getText());
         // Set the text of T3 to the result
@@ -84,7 +88,7 @@ class SwingExample
     frame.add(T3);
 
     // Set the size of the frame and make it visible
-    frame.setSize(200, 100);
+    frame.setSize(500, 500);
     frame.setVisible(true);
   }
 }

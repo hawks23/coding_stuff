@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch LoginPage",
+      "request": "launch",
+      "mainClass": "LoginPage",
+      "projectName": "Coding_stuff_380a29f8"
+    },
+    {
+      "type": "java",
+      "name": "Launch SwingTest",
+      "request": "launch",
+      "mainClass": "SwingTest",
+      "projectName": "Coding_stuff_380a29f8"
+    },
+    {
+      "type": "java",
+      "name": "Launch multiThread_IE2",
+      "request": "launch",
+      "mainClass": "multiThread_IE2",
+      "projectName": "Coding_stuff_380a29f8"
+    },
+    {
+      "type": "java",
       "name": "Launch SwingExample",
       "request": "launch",
       "mainClass": "SwingExample",

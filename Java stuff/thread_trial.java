@@ -19,7 +19,7 @@
     }
 }*/
 
-class myThread implements Runnable
+class thread_trial implements Runnable
 {
     public void run()
     {
@@ -31,9 +31,9 @@ class myThread implements Runnable
 
     public static void main(String args[]) throws InterruptedException
     {
-        myThread m1 = new myThread();
+        thread_trial m1 = new thread_trial();
         Thread t1 = new Thread(m1,"Thread : 1");
-        myThread m2 = new myThread();
+        thread_trial m2 = new thread_trial();
         Thread t2 = new Thread(m2, "Thread : 2");
 
         t1.start();
