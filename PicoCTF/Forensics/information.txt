@@ -1,0 +1,10 @@
+picoCTF{the_m3tadata_1s_modified}
+
+We use wget to install the cat.jpg to our local machine.
+Since they're talking about hidden data, I use exiftool
+
+> exiftool cat.jpg
+
+I notice that the License seems to be weird. "cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9"
+
+It seems to be in base64. I use an online decoder and get the flag

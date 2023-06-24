@@ -1,0 +1,31 @@
+picoCTF{h45h_sl1ng1ng_fffcda23}
+
+There are 5 password cracking challenge.
+Fairly simple.
+
+But this one seems harder.
+
+The password is encrypted and stored in one of the files.
+
+The level5.py contains the code to decrypt the password. dictionary.txt contains many possible password combinations.
+
+I'm gonna have to automate the script to read from "dictionary.txt" and pass in every value into the python files
+individually.
+
+def level_5_pw_check():
+    f=open("dictionary.txt",'r')
+    '''for i in f:
+        print(i.strip('\n'))'''
+    for i in f:
+        pw = i.strip('\n')
+        user_pw_hash = hash_pw(pw)
+        if( user_pw_hash == correct_pw_hash ):
+            print("Welcome back... your flag, user:")
+            decryption = str_xor(flag_enc.decode(), pw)
+            print(decryption)
+            return
+    print("That password is incorrect")
+
+The following code was used and output was obtained
+
+picoCTF{h45h_sl1ng1ng_fffcda23}

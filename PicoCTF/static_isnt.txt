@@ -1,0 +1,18 @@
+picoCTF{d15a5m_t34s3r_ccb2b43e}
+
+There is a static binary file called "static" and a BASH SCRIPT
+
+>> wget both the files.
+
+The static binary file by itself is meaningless.
+The Bash script is a script that uses Objdump and decodes the binary file.
+It extract the normal text data and puts it into    static.ltdis.strings.txt
+
+the "static.ltdis.x86_64.txt", which gets compiled contains the assembly languange of the bash script.
+
+>> bash ltdis.sh static
+
+This will run the bash script with "static" as command line argument.
+The compiled program returns two files. Cat the text file with strings in it.
+
+It will contain the flag. Just search for it. Use grep, if must.

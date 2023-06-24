@@ -1,7 +1,7 @@
 // INCOMPLETE
 
-#include<stdio.h>;
-#include<stdlib.h>;
+#include<stdio.h>
+#include<stdlib.h>
 
 struct poly
 {
@@ -31,65 +31,75 @@ void main()
     printf("Hello World");
     int len1,len2;
     int data;      // Degree of the first and second polynomial
-    printf("\n------------------------------\nPolynomial Addition !\nEnter the power of the first polynomial :");
-    scanf("%d,&len1");
-    printf("\nEnter the power of the second polynomial :\n");
-    scanf("%d,&len2");
+    printf("\n------------------------------\nPolynomial Addition !\n");
 
     // Entering first polynomial
-    for(int i=len1;i>=0;i--)
+    while(1)
     {
-
-        printf("Enter value of the %dth power :",i);
-        scanf("%d,&data");
-        poly1 = (struct poly*)malloc(sizeof(struct poly));
-        poly1->coef=data;
-        poly1->pow=i;
-        if (p1_start==NULL)
+        printf("Enter value of the degree :");
+        scanf("%d",&len1);
+        if(len1==-1)
         {
-            p1_start=poly1;
-            p1_start->link=NULL;
-            temp=p1_start;
+            break;
         }
         else
         {
-            temp->link=poly1;
-            poly1->link=NULL;
-            temp=temp->link;
+            poly1 = (struct poly*)malloc(sizeof(struct poly));
+            printf("Enter the coefficient of %d :",len1);
+            scanf("%d",&data);
+            poly1->coef=data;
+            poly1->pow=len1;
+            if (p1_start==NULL)
+            {
+                p1_start=poly1;
+                p1_start->link=NULL;
+                temp=p1_start;
+            }
+            else
+            {
+                temp->link=poly1;
+                poly1->link=NULL;
+                temp=temp->link;
+            }
         }
+        
     }
     printf("\nFirst Polynomial is :\n");
     traverse(p1_start);
-    printf("\nSecond Polynomial is :\n");
-    traverse(p2_start);
-    printf("\n\n");
 
     // Entering second polynomial
 
-    for(int i=len1;i>=0;i--)
+    while(1)
     {
-
-        printf("Enter value of the %dth power :",i);
-        scanf("%d,&data");
-        poly2 = (struct poly*)malloc(sizeof(struct poly));
-        poly2->coef=data;
-        poly2->pow=i;
-        if (p2_start==NULL)
+        printf("Enter value of the degree :");
+        scanf("%d",&len2);
+        if(len2==-1)
         {
-            p2_start=poly2;
-            p2_start->link=NULL;
-            temp=p2_start;
+            break;
         }
         else
         {
-            temp->link=poly2;
-            poly2->link=NULL;
-            temp=temp->link;
+            poly2 = (struct poly*)malloc(sizeof(struct poly));
+            printf("Enter the coefficient of %d :",len2);
+            scanf("%d",&data);
+            poly2->coef=data;
+            poly2->pow=len1;
+            if (p2_start==NULL)
+            {
+                p2_start=poly2;
+                p2_start->link=NULL;
+                temp=p2_start;
+            }
+            else
+            {
+                temp->link=poly2;
+                poly2->link=NULL;
+                temp=temp->link;
+            }
         }
+        
     }
-
-    printf("\nFirst Polynomial is :\n");
-    traverse(p1_start);
+    
     printf("\nSecond Polynomial is :\n");
     traverse(p2_start);
     printf("\n\n");

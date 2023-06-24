@@ -1,0 +1,8 @@
+picoCTF{l3v3l_up!_t4k3_4_r35t!_d32e018c}
+
+Very straightforward CTF.
+
+wget the zip file.
+then keep cd-ing till you reach an executable file
+
+./the_executable file and you'll get the Flag.

@@ -8,6 +8,8 @@ struct poly
     struct poly *link;
 } *PHead, *QHead, *RHead, *P = NULL, *Q = NULL, *R = NULL, *Head, *Temp1, *Temp2;
 
+// Phead is start, P is temp;
+
 void create_first(int expo, int coeff)
 {
     Head = (struct poly *)malloc(sizeof(struct poly));
@@ -45,7 +47,7 @@ void create_second(int expo, int coeff)
 
 void multi()
 {
-    P = PHead;
+    P = PHead; // temp=start;
     Q = QHead;
     RHead = NULL;
     while (P != NULL)
@@ -70,7 +72,7 @@ void multi()
         P = P->link;
         Q = QHead;
     }
-    R = RHead;
+    R = RHead; //temp = start;
     while (R != NULL)
     {
         Temp1 = R;

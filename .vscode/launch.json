@@ -3,6 +3,104 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch TrafficLight",
+      "request": "launch",
+      "mainClass": "TrafficLight",
+      "projectName": "Coding_stuff_380a29f8"
+    },
+    {
+      "type": "java",
+      "name": "Launch quicksort",
+      "request": "launch",
+      "mainClass": "quicksort",
+      "projectName": "Coding_stuff_380a29f8"
+    },
+    {
+      "type": "java",
+      "name": "Launch Multitreading",
+      "request": "launch",
+      "mainClass": "Multitreading",
+      "projectName": "Coding_stuff_380a29f8"
+    },
+    {
+      "type": "java",
+      "name": "Launch multi",
+      "request": "launch",
+      "mainClass": "multi",
+      "projectName": "Coding_stuff_380a29f8"
+    },
+    {
+      "type": "java",
+      "name": "Launch evenprogtest",
+      "request": "launch",
+      "mainClass": "evenprogtest",
+      "projectName": "Coding_stuff_380a29f8"
+    },
+    {
+      "type": "java",
+      "name": "Launch Reverse_int",
+      "request": "launch",
+      "mainClass": "Reverse_int",
+      "projectName": "Coding_stuff_380a29f8"
+    },
+    {
+      "type": "java",
+      "name": "Launch test1",
+      "request": "launch",
+      "mainClass": "test1",
+      "projectName": "Coding_stuff_380a29f8"
+    },
+    {
+      "type": "java",
+      "name": "Launch tiny_calc",
+      "request": "launch",
+      "mainClass": "tiny_calc",
+      "projectName": "Coding_stuff_380a29f8"
+    },
+    {
+      "type": "java",
+      "name": "Launch vectors",
+      "request": "launch",
+      "mainClass": "vectors",
+      "projectName": "Coding_stuff_380a29f8"
+    },
+    {
+      "type": "java",
+      "name": "Launch trafficLights",
+      "request": "launch",
+      "mainClass": "trafficLights",
+      "projectName": "Coding_stuff_380a29f8"
+    },
+    {
+      "type": "java",
+      "name": "Launch traffic_program",
+      "request": "launch",
+      "mainClass": "traffic_program",
+      "projectName": "Coding_stuff_380a29f8"
+    },
+    {
+      "type": "java",
+      "name": "Launch myContent",
+      "request": "launch",
+      "mainClass": "myContent",
+      "projectName": "Coding_stuff_380a29f8"
+    },
+    {
+      "type": "java",
+      "name": "Launch filetrial",
+      "request": "launch",
+      "mainClass": "filetrial",
+      "projectName": "Coding_stuff_380a29f8"
+    },
+    {
+      "type": "java",
+      "name": "Launch calculator",
+      "request": "launch",
+      "mainClass": "calculator",
+      "projectName": "Coding_stuff_380a29f8"
+    },
+    {
+      "type": "java",
       "name": "Launch LoginPage",
       "request": "launch",
       "mainClass": "LoginPage",

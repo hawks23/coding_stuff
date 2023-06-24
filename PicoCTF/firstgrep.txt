@@ -1,0 +1,3 @@
+picoCTF{grep_is_good_to_find_things_5af9d829}
+
+Grep into the file. grep picoCTF

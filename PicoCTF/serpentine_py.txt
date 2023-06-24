@@ -1,0 +1,8 @@
+picoCTF{7h3_r04d_l355_7r4v3l3d_8e47d128}
+
+The program is a menu driven prog where flag is printed as option b.
+
+But the function call was wrongly given in the menu.
+Change option b to call print_flag()
+
+Flag is printed.

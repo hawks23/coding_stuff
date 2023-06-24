@@ -1,0 +1,12 @@
+picoCTF{5tRIng5_1T_7f766a23}
+
+There's a file called "strings" there.
+
+Since the name of the challenge was strings it, i tried using strings function with
+the strings file as the first parameter. It started printing many stings.
+Then i used the same but grepped picoCTF and got the flag.
+
+Apparantly, if we executed the file, they'll advice you to use the manual on 'strings' function.
+
+
+https://linux.die.net/man/1/strings --> Refernce to strings CL function.

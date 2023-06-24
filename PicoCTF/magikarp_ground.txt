@@ -1,0 +1,17 @@
+picoCTF{xxsh_0ut_0f_\/\/4t3r_21cac893}
+
+This ctf attempts to teach the user to use ssh and navigate around the machine.
+An instance is started by PicoCTF in their own server.
+
+>> ssh ctf-player@venus.picoctf.net -p 59213
+
+to connect to the machine.
+
+>> cat
+
+to find the first flag. Then follow the second txt file which shows instructions to get to
+the second flag.
+
+Go to root(/) directory for second flag. Follow the instrcutions. Go to home(~) for third flag.
+
+Put the flags together.

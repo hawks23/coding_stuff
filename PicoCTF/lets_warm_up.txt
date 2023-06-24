@@ -1,0 +1,5 @@
+picoCTF{p}
+
+If I told you a word started with 0x70 in hexadecimal, what would it start with in ASCII ?
+
+Directly look up what 0x70 is in hexadecimal. Use the output as flag.

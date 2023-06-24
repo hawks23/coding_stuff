@@ -4,14 +4,14 @@
  * separately using multithreading
  */
 
-public class multiThread_IE2 implements Runnable
+/*public class multiThread_IE2 implements Runnable
 {
     public static void main(String args[]) throws InterruptedException
     {
         multiThread_IE2 MultiThree = new multiThread_IE2();
         Thread t1 = new Thread(MultiThree,"MultiThree");
-        multiThread_IE2 MultiFive = new multiThread_IE2();
-        Thread t2 = new Thread(MultiFive,"MultiFive");
+        //multiThread_IE2 MultiFive = new multiThread_IE2();
+        Thread t2 = new Thread(MultiThree,"MultiFive");
 
         t1.start();
         t1.join();
@@ -40,4 +40,38 @@ public class multiThread_IE2 implements Runnable
         }
     }
     
+}*/
+
+// Using Thread Class
+
+class Multitreading extends Thread
+{
+    public static void main(String args[])
+    {
+        Multitreading m1 = new Multitreading();
+        Multitreading m2 = new Multitreading();
+        m1.setName("MultiThree");
+        m2.setName("MultiFive");
+        m1.start();
+        m2.start();
+    }
+
+    synchronized public void run()
+    {
+        String st = Thread.currentThread().getName();
+        if(st.equals("MultiThree"))
+        {
+            for(int i=0;i<30;i+=3)
+            {
+                System.out.println(st +" : " + i);
+            }
+        }
+        if(st.equals("MultiThree"))
+        {
+            for(int i=0;i<30;i+=5)
+            {
+                System.out.println(st +" : " + i);
+            }
+        }
+    }
 }

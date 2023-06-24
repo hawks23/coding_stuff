@@ -1,0 +1,5 @@
+picoCTF{101010}
+
+Can you convert the number 42 (base 10) to binary (base 2)?
+
+Directly lookup in next or just calculate.

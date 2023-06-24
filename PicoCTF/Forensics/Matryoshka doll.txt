@@ -1,0 +1,9 @@
+picoCTF{336cf6d51c9d9774fd37196c1d7320ff}
+
+Data seems to be encapsulated within data. So it must be zipped
+
+I unzip to find a file called base_images
+
+I keep going deeper and unzip the files inside.
+
+After 5 iterations, we get flag.txt which we cat to obtain the flag.

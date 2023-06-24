@@ -1,0 +1,8 @@
+picoCTF{f1nd_15_f457_ab443fd1}
+
+The zip file contains many directories and files.
+
+We must use the find function. Check its manual to learn how it works.
+
+>> find . -name uber-secret.txt
+Then cat the output.

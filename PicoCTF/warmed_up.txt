@@ -1,0 +1,5 @@
+picoCTF{61}
+
+What is 0x3D (base 16) in decimal (base 10) ?
+
+Look up in net and directly answer.
